@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+    <title>Document</title>
+</head>
+<body>
+    <header class="header">
+        <h3>MercaLibre</h3>
+        <form class="form-search-bar">
+            <input type="text" placeholder="Busca productos, marcas y más..." name="search" id="inputSearch">
+            <button type="submit">
+                <i class='bx bx-search'></i>
+            </button>
+        </form>
+    </header>
+    <section class="container-products">
+        
+    </section>
+    <div class="modal-product">
+        <div class="modal-product-content"></div>
+    </div>
+
+
+    <template>
+        <article class="product">
+            <img src="" alt="">
+            <div>
+                <h4 class="product-name"></h4>
+                <span class="product-price"></span>
+            </div>
+        </article>
+    </template>
+
+    <template class="template-modal">
+        <div class="container-all-imgs">
+            <div class="container-imgs"></div>
+            <img src="" alt="" class="principal-img">
+        </div>
+        <div class="product-info">
+            <h4 class="product-info-name"></h4>
+            <p class="product-info-price"></p>
+            <div class="main-features">
+                <h5>Principales características</h5>
+                <ul class="main-features-ul"></ul>
+            </div>
+            <div class="container-btns">
+                <button class="btn-buy">Comprar ahora</button>
+                <button class="btn-add-cart">Agregar al carrito</button>
+            </div>
+        </div>
+        <button class="close-modal">X</button>
+    </template>
+
+    <script src="app.js"></script>
+</body>
+</html>
