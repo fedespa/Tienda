@@ -1,5 +1,9 @@
 {
   "rewrites": [
     { "source": "/(.*)", "destination": "/index.html" }
-  ]
+  ],
+  "static": {
+    "src": "public/**/*",
+    "dest": "/"
+  }
 }
